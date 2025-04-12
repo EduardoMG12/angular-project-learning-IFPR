@@ -1,0 +1,17 @@
+<!-- property-card.component.html -->
+<div
+  class="relative w-64 h-80 overflow-hidden shadow-lg"
+  [ngClass]="borderRadius"
+>
+  <!-- Image Section -->
+  <img [src]="imageUrl" alt="{{ title }}" class="w-full h-3/4 object-cover" />
+
+  <!-- Overlay Section -->
+  <div
+    class="absolute bottom-0 w-full h-1/4 flex flex-col justify-center p-4"
+    [ngClass]="backgroundColor"
+  >
+    <h3 [ngClass]="[textColor, fontSize]">{{ title }}</h3>
+    <p class="text-sm" [ngClass]="textColor">{{ count }} Properties</p>
+  </div>
+</div>

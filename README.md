@@ -1,60 +1,80 @@
-# AngularProjectCharlesIFPR
+# StudyBuddy - Plataforma de Estudos com Flashcards
 
-https://www.figma.com/design/1V7GdmNiLqnr1mQemdef1t/Skylite-Properties---Find-Sweet-Home-Near-you-(Community)?node-id=1-244&t=RtUju20nWxvHMtbr-0
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Link do projeto de inspiração: https://preview--studybuddy-neon-cards.lovable.app/    https://lovable.dev/projects/3fe6fd9d-9def-4674-8fd5-3932bb9626e4
 
-## Development server
+![Screenshot do StudyBuddy](assets/screenshot.png)
 
-To start a local development server, run:
+**StudyBuddy** é uma aplicação interativa de flashcards construída com Angular, projetada para potencializar o aprendizado ativo. Permite criar, revisar e compartilhar flashcards com algoritmos inteligentes para sessões de estudo otimizadas. Com uma UI moderna em tons de azul e roxo neon, StudyBuddy oferece uma experiência vibrante e envolvente para estudantes e aprendizes. Por enquanto, é uma aplicação apenas frontend, mas está pronta para integração com backend no futuro.
 
-```bash
-ng serve
+## Funcionalidades
+
+- **Criação de Decks**: Monte flashcards com um formulário no estilo JSON, incluindo perguntas, respostas e alternativas de múltipla escolha opcionais (usando Angular Reactive Forms).
+- **Modo de Estudo**: Navegue pelos flashcards com algoritmos de revisão por erros, repetição espaçada ou modo normal. Escolha uma alternativa para virar o card, ver a resposta correta e marcar como "aprendido" ou "revisar novamente".
+- **Acompanhamento de Progresso**: Visualize estatísticas de aprendizado com gráficos simples (usando Ngx-Charts).
+- **Categorias e Tags**: Organize decks por temas (ex.: Matemática, Idiomas) com filtros flexíveis.
+- **Suporte Offline**: Persistência de dados simulada com LocalStorage para uso offline.
+- **UI Moderna**: Design elegante com cards e modais do Angular Material, toques de azul/roxo neon e animações suaves para virar cards e transições.
+- **Design Responsivo**: Totalmente adaptável para mobile e desktop com Tailwind CSS.
+
+## Tecnologias Utilizadas
+
+- **Frontend**: Angular 18, TypeScript, RxJS
+- **Componentes de UI**: Angular Material, Angular Animations
+- **Estilização**: Tailwind CSS com temas personalizados em azul/roxo neon
+- **Gráficos**: Ngx-Charts
+- **Armazenamento**: LocalStorage para persistência simulada
+- **Ferramentas de Build**: Angular CLI
+
+## Como Começar
+
+### Pré-requisitos
+
+- Node.js (v18 ou superior)
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Instalação
+
+1. Clone o repositório:
+   ```bash
+
+   git clone https://github.com/seu-username/studybuddy.git
+
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. Entre na pasta do projeto:
 
-## Code scaffolding
+ ```bash
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+    cd studybuddy
 
-```bash
-ng generate component component-name
-```
+ ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Instale as dependências:
 
 ```bash
-ng generate --help
+
+pnpm install
+
 ```
 
-## Building
-
-To build the project run:
+4. Inicie o servidor de desenvolvimento:
 
 ```bash
-ng build
+
+pnpm start
+
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Acesse http://localhost:4200 no seu navegador.
 
-## Running unit tests
+- Planos Futuros
+- Integração com backend usando Node.js e MongoDB para compartilhamento de decks e contas de usuário.
+- Sincronização em tempo real entre dispositivos.
+- Algoritmos avançados de repetição espaçada com cálculos no servidor.
+- Marketplace de decks públicos para compartilhamento na comunidade.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Contribuição
+Issues e pull requests são bem-vindos! Sinta-se à vontade para contribuir com ideias ou melhorias.
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Licença
+Este projeto está licenciado sob a Licença MIT.
